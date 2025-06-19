@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="com.liviemn.wrapped.mini.WrappedMiniApplicationTests" tests="1" skipped="0" failures="0" errors="0" timestamp="2025-06-19T18:51:45.355Z" hostname="MacBookAir" time="0.436">
+  <properties/>
+  <testcase name="contextLoads()" classname="com.liviemn.wrapped.mini.WrappedMiniApplicationTests" time="0.436"/>
+  <system-out><![CDATA[14:51:44.358 [Test worker] INFO org.springframework.test.context.support.AnnotationConfigContextLoaderUtils -- Could not detect default configuration classes for test class [com.liviemn.wrapped.mini.WrappedMiniApplicationTests]: WrappedMiniApplicationTests does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+14:51:44.413 [Test worker] INFO org.springframework.boot.test.context.SpringBootTestContextBootstrapper -- Found @SpringBootConfiguration com.liviemn.wrapped.mini.WrappedMiniApplication for test class com.liviemn.wrapped.mini.WrappedMiniApplicationTests
+
+  .   ____          _            __ _ _
+ /\\ / ___'_ __ _ _(_)_ __  __ _ \ \ \ \
+( ( )\___ | '_ | '_| | '_ \/ _` | \ \ \ \
+ \\/  ___)| |_)| | | | | || (_| |  ) ) ) )
+  '  |____| .__|_| |_|_| |_\__, | / / / /
+ =========|_|==============|___/=/_/_/_/
+
+ :: Spring Boot ::                (v3.5.0)
+
+2025-06-19T14:51:44.619-04:00  INFO 16436 --- [wrappedmini] [    Test worker] c.l.w.mini.WrappedMiniApplicationTests   : Starting WrappedMiniApplicationTests using Java 21.0.4 with PID 16436 (started by oliviamoon in /Users/oliviamoon/Downloads/wrapped-mini)
+2025-06-19T14:51:44.620-04:00  INFO 16436 --- [wrappedmini] [    Test worker] c.l.w.mini.WrappedMiniApplicationTests   : No active profile set, falling back to 1 default profile: "default"
+2025-06-19T14:51:45.054-04:00  INFO 16436 --- [wrappedmini] [    Test worker] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page: class path resource [static/index.html]
+2025-06-19T14:51:45.347-04:00  INFO 16436 --- [wrappedmini] [    Test worker] c.l.w.mini.WrappedMiniApplicationTests   : Started WrappedMiniApplicationTests in 0.863 seconds (process running for 1.455)
+]]></system-out>
+  <system-err><![CDATA[Mockito is currently self-attaching to enable the inline-mock-maker. This will no longer work in future releases of the JDK. Please add Mockito as an agent to your build as described in Mockito's documentation: https://javadoc.io/doc/org.mockito/mockito-core/latest/org.mockito/org/mockito/Mockito.html#0.3
+WARNING: A Java agent has been loaded dynamically (/Users/oliviamoon/.gradle/caches/modules-2/files-2.1/net.bytebuddy/byte-buddy-agent/1.17.5/58f9507f5f28d1d3e7adfb4ec2fe37c29d332c9b/byte-buddy-agent-1.17.5.jar)
+WARNING: If a serviceability tool is in use, please run with -XX:+EnableDynamicAgentLoading to hide this warning
+WARNING: If a serviceability tool is not in use, please run with -Djdk.instrument.traceUsage for more information
+WARNING: Dynamic loading of agents will be disallowed by default in a future release
+]]></system-err>
+</testsuite>

@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <title>Top Spotify Tracks</title>
+</head>
+<body>
+    <h1>Your Top 10 Spotify Tracks</h1>
+    <ul>
+        <li th:each="track : ${tracks}">
+            <a th:href="${track.url}" th:text="${track.name}" target="_blank"></a>
+        </li>
+    </ul>
+</body>
+</html>
