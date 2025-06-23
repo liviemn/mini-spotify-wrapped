@@ -1,14 +1,80 @@
 <!DOCTYPE html>
 <html xmlns:th="http://www.thymeleaf.org">
 <head>
-    <title>Top Spotify Tracks</title>
+    <meta charset="UTF-8">
+    <title>Your Spotify Top Tracks</title>
+    <style>
+        body {
+            background: linear-gradient(to right, #614385, #57507F, #516395);
+            color: white;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            margin: 0;
+            padding: 2rem;
+        }
+
+        h1 {
+            text-align: center;
+            margin-bottom: 2rem;
+        }
+
+        .track-list {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 1.5rem;
+        }
+
+        .track {
+            background: rgba(0, 0, 0, 0.6);
+            border-radius: 10px;
+            width: 220px;
+            padding: 1rem;
+            text-align: center;
+            transition: transform 0.2s, box-shadow 0.2s;
+        }
+
+        .track:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 8px 16px rgba(0,0,0,0.3);
+        }
+
+        .track img {
+            width: 100%;
+            border-radius: 10px;
+        }
+
+        .track-name {
+            margin: 0.5rem 0 0.3rem;
+            font-weight: bold;
+            font-size: 1.1rem;
+        }
+
+        .artist-name {
+            color: #ccc;
+            font-size: 0.9rem;
+            margin-bottom: 0.5rem;
+        }
+
+        .track a {
+            color: #1db954;
+            text-decoration: none;
+            font-size: 0.9rem;
+        }
+
+        .track a:hover {
+            text-decoration: underline;
+        }
+    </style>
 </head>
 <body>
-    <h1>Your Top 10 Spotify Tracks</h1>
-    <ul>
-        <li th:each="track : ${tracks}">
-            <a th:href="${track.url}" th:text="${track.name}" target="_blank"></a>
-        </li>
-    </ul>
+    <h1>Your Top Spotify Tracks 🎧</h1>
+    <div class="track-list">
+        <div class="track" th:each="track : ${tracks}">
+            <img th:src="${track.image}" alt="Album Art">
+            <div class="track-name" th:text="${track.name}">Track Name</div>
+            <div class="artist-name" th:text="${track.artist}">Artist Name</div>
+            <a th:href="${track.url}" target="_blank">Listen on Spotify</a>
+        </div>
+    </div>
 </body>
 </html>

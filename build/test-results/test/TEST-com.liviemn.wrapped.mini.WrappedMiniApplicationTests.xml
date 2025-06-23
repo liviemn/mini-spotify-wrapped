@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="com.liviemn.wrapped.mini.WrappedMiniApplicationTests" tests="1" skipped="0" failures="0" errors="0" timestamp="2025-06-19T18:51:45.355Z" hostname="MacBookAir" time="0.436">
+<testsuite name="com.liviemn.wrapped.mini.WrappedMiniApplicationTests" tests="1" skipped="0" failures="0" errors="0" timestamp="2025-06-23T03:49:30.674Z" hostname="MacBookAir" time="0.431">
   <properties/>
-  <testcase name="contextLoads()" classname="com.liviemn.wrapped.mini.WrappedMiniApplicationTests" time="0.436"/>
-  <system-out><![CDATA[14:51:44.358 [Test worker] INFO org.springframework.test.context.support.AnnotationConfigContextLoaderUtils -- Could not detect default configuration classes for test class [com.liviemn.wrapped.mini.WrappedMiniApplicationTests]: WrappedMiniApplicationTests does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
-14:51:44.413 [Test worker] INFO org.springframework.boot.test.context.SpringBootTestContextBootstrapper -- Found @SpringBootConfiguration com.liviemn.wrapped.mini.WrappedMiniApplication for test class com.liviemn.wrapped.mini.WrappedMiniApplicationTests
+  <testcase name="contextLoads()" classname="com.liviemn.wrapped.mini.WrappedMiniApplicationTests" time="0.431"/>
+  <system-out><![CDATA[23:49:29.704 [Test worker] INFO org.springframework.test.context.support.AnnotationConfigContextLoaderUtils -- Could not detect default configuration classes for test class [com.liviemn.wrapped.mini.WrappedMiniApplicationTests]: WrappedMiniApplicationTests does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+23:49:29.758 [Test worker] INFO org.springframework.boot.test.context.SpringBootTestContextBootstrapper -- Found @SpringBootConfiguration com.liviemn.wrapped.mini.WrappedMiniApplication for test class com.liviemn.wrapped.mini.WrappedMiniApplicationTests
 
   .   ____          _            __ _ _
  /\\ / ___'_ __ _ _(_)_ __  __ _ \ \ \ \
@@ -14,10 +14,10 @@
 
  :: Spring Boot ::                (v3.5.0)
 
-2025-06-19T14:51:44.619-04:00  INFO 16436 --- [wrappedmini] [    Test worker] c.l.w.mini.WrappedMiniApplicationTests   : Starting WrappedMiniApplicationTests using Java 21.0.4 with PID 16436 (started by oliviamoon in /Users/oliviamoon/Downloads/wrapped-mini)
-2025-06-19T14:51:44.620-04:00  INFO 16436 --- [wrappedmini] [    Test worker] c.l.w.mini.WrappedMiniApplicationTests   : No active profile set, falling back to 1 default profile: "default"
-2025-06-19T14:51:45.054-04:00  INFO 16436 --- [wrappedmini] [    Test worker] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page: class path resource [static/index.html]
-2025-06-19T14:51:45.347-04:00  INFO 16436 --- [wrappedmini] [    Test worker] c.l.w.mini.WrappedMiniApplicationTests   : Started WrappedMiniApplicationTests in 0.863 seconds (process running for 1.455)
+2025-06-22T23:49:29.961-04:00  INFO 71137 --- [wrappedmini] [    Test worker] c.l.w.mini.WrappedMiniApplicationTests   : Starting WrappedMiniApplicationTests using Java 21.0.4 with PID 71137 (started by oliviamoon in /Users/oliviamoon/Downloads/wrapped-mini)
+2025-06-22T23:49:29.962-04:00  INFO 71137 --- [wrappedmini] [    Test worker] c.l.w.mini.WrappedMiniApplicationTests   : No active profile set, falling back to 1 default profile: "default"
+2025-06-22T23:49:30.386-04:00  INFO 71137 --- [wrappedmini] [    Test worker] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page: class path resource [static/index.html]
+2025-06-22T23:49:30.667-04:00  INFO 71137 --- [wrappedmini] [    Test worker] c.l.w.mini.WrappedMiniApplicationTests   : Started WrappedMiniApplicationTests in 0.842 seconds (process running for 1.414)
 ]]></system-out>
   <system-err><![CDATA[Mockito is currently self-attaching to enable the inline-mock-maker. This will no longer work in future releases of the JDK. Please add Mockito as an agent to your build as described in Mockito's documentation: https://javadoc.io/doc/org.mockito/mockito-core/latest/org.mockito/org/mockito/Mockito.html#0.3
 WARNING: A Java agent has been loaded dynamically (/Users/oliviamoon/.gradle/caches/modules-2/files-2.1/net.bytebuddy/byte-buddy-agent/1.17.5/58f9507f5f28d1d3e7adfb4ec2fe37c29d332c9b/byte-buddy-agent-1.17.5.jar)

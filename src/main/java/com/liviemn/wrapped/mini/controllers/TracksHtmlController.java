@@ -50,13 +50,31 @@ public class TracksHtmlController {
             String name = (String) item.get("name");
 
             @SuppressWarnings("unchecked")
+            Map<String, Object> album = (Map<String, Object>) item.get("album");
+            @SuppressWarnings("unchecked")
+            List<Map<String, Object>> images = (List<Map<String, Object>>) album.get("images");
+            String imageUrl = images.isEmpty() ? "" : (String) images.get(0).get("url");
+
+            @SuppressWarnings("unchecked")
+            List<Map<String, Object>> artists = (List<Map<String, Object>>) item.get("artists");
+            String artistNames = artists.stream()
+                .map(artist -> (String) artist.get("name"))
+                .reduce((a, b) -> a + ", " + b)
+                .orElse("Unknown");
+
+            @SuppressWarnings("unchecked")
             Map<String, Object> externalUrls = (Map<String, Object>) item.get("external_urls");
             String url = (String) externalUrls.get("spotify");
 
-            tracks.add(Map.of("name", name, "url", url));
+            Map<String, String> trackInfo = new HashMap<>();
+            trackInfo.put("name", name);
+            trackInfo.put("artist", artistNames);
+            trackInfo.put("image", imageUrl);
+            trackInfo.put("url", url);
+            tracks.add(trackInfo);
         }
 
         model.addAttribute("tracks", tracks);
-        return "top-tracks"; // template: src/main/resources/templates/top-tracks.html
+        return "top-tracks"; // Thymeleaf template: templates/top-tracks.html
     }
 }
